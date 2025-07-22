@@ -14,6 +14,9 @@ function Slider(props) {
                 <div className='slider__right_arrow'>
                     <BsChevronCompactRight size={30} onClick={props.nextSlide} /> 
                 </div> 
+                <div className='slider__title_container'>
+                    <p>{data[props.currentIndex].title}</p>
+                </div>
             </div>
 
             <div className='slider__dots'>

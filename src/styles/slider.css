@@ -47,6 +47,21 @@
     transition: opacity 0.2s; 
 } 
 
+.slider__title_container{ 
+    position:absolute; 
+    bottom:0px; 
+    left:50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.5);  
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
+    width:96%;
+    border-radius:16px;
+    text-align: center; 
+    color: white;  
+    padding: 8px 12px;
+
+}
+
 .slider__dots{
     display: flex;
     justify-content: center; 
