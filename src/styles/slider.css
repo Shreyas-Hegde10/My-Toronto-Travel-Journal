@@ -1,0 +1,19 @@
+.slider{
+    max-width: 1400px; 
+    height:780px;
+    width: 100%; 
+    margin: auto; 
+    padding: 16px 4px; 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.slider__image {
+  width: 600px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
