@@ -17,12 +17,21 @@ function App() {
   const nextSlide = () => {
     setTimeout(() => {const newIndex = currentIndex === data.length - 1 ? 0 : currentIndex +1; 
       setCurrentIndex(newIndex);}, 300)  
-      }
+      } 
+  
+  const goToSlide = (slideIndex) => {
+    setTimeout(() => {setCurrentIndex(slideIndex);}, 300)
+  }
 
   return ( 
     <>
       <Header />
-      <Slider currentIndex = {currentIndex} previousSlide = {previousSlide} nextSlide = {nextSlide} />
+      <Slider 
+      currentIndex = {currentIndex} 
+      previousSlide = {previousSlide} 
+      nextSlide = {nextSlide} 
+      goToSlide = {goToSlide} 
+      />
     </>
   );
 }

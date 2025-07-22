@@ -5,7 +5,8 @@
     margin: auto; 
     padding: 16px 4px; 
     position: relative; 
-    display: flex;
+    display: flex; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 } 
@@ -37,11 +38,20 @@
 }
 
 .slider__right_arrow {
-  right: 0; /* Align to right edge of image */
+  right: 0; 
 } 
 
 .slider__left_arrow:hover,
 .slider__right_arrow:hover {
     opacity: 1; 
-    transition: opacity 0.2s;
+    transition: opacity 0.2s; 
+} 
+
+.slider__dots{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 2px 0; 
+    margin-top: 10px; 
+    cursor: pointer;
 }
