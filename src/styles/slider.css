@@ -44,7 +44,7 @@
 .slider__left_arrow:hover,
 .slider__right_arrow:hover {
     opacity: 1; 
-    transition: opacity 0.2s; 
+    transition: opacity 0.8s ease-in-out; 
 } 
 
 .slider__title_container{ 
@@ -59,7 +59,6 @@
     text-align: center; 
     color: white;  
     padding: 8px 12px;
-
 }
 
 .slider__dots{
@@ -69,4 +68,9 @@
     padding: 2px 0; 
     margin-top: 10px; 
     cursor: pointer;
+} 
+
+.slider__dots-active{
+    color:gray;  
+    transition: color 0.2s ease-in-out;
 }

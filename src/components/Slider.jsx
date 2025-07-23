@@ -26,6 +26,7 @@ function Slider(props) {
                             size={24} 
                             key={slideIndex} 
                             onClick={() => props.goToSlide(slideIndex)} 
+                            {...props.currentIndex === slideIndex ? {className: 'slider__dots-active'} : null}
                         />
                     </div>))}
             </div>
