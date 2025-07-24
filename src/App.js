@@ -1,7 +1,8 @@
 import Header from "./components/Header"
 import Slider from "./components/Slider";
 import {React, useState } from "react"; 
-import data from './data';
+import data from './data'; 
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -24,15 +25,29 @@ function App() {
   }
 
   return ( 
-    <>
-      <Header />
+    <div>
+      <Header /> 
+      <h1 className="header__typewriter">
+  <Typewriter
+    options={{
+      strings: [
+        'welcome to my travel journal!',
+        'come explore toronto with me!',
+        'hover left/right or use dots to navigate'
+      ],
+      autoStart: true,
+      loop: true,
+      delay: 75,
+      html: true
+    }}
+  />
+</h1>
       <Slider 
       currentIndex = {currentIndex} 
       previousSlide = {previousSlide} 
       nextSlide = {nextSlide} 
-      goToSlide = {goToSlide} 
-      />
-    </>
+      goToSlide = {goToSlide}/>
+    </div>  
   );
 }
 

@@ -1,5 +1,5 @@
 .header{
-    background: #F55A5A; 
+    background: linear-gradient(to right, #00bcd4, #0077be);
     height: 55px;  
     color: white; 
     display:flex; 
@@ -16,4 +16,38 @@
 .header-img{
     height:24px; 
     margin-right: 10px;
+} 
+
+.header__typewriter{
+    display:flex; 
+    justify-content: center; 
+    font-size: 32px; 
+    margin-top: 100px; 
+    overflow: hidden;
+    white-space: nowrap; 
+    animation: fadeInUp 1s ease-in-out;
+    background: linear-gradient(to right, #00b4db, #0083b0); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-shadow: 0 0 px rgba(0, 179, 255, 0.4);
+    
+} 
+
+@keyframes fadeInUp{
+    0%{
+        opacity:0; 
+        transform: translateY(20px);
+    } 
+    100%{
+        opacity:1; 
+    }
+} 
+
+.header__typewriter--span{
+    color:black; 
+    background: none !important; 
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important; 
 }
+
+
