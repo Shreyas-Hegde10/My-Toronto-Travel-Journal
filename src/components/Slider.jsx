@@ -7,7 +7,7 @@ function Slider(props) {
 
     return(
         <div className='slider'>
-            <div className='slider__image' style={{ backgroundImage: `url(${data[props.currentIndex].url})`}}>
+            <div className={`slider__image ${props.isFading ? 'fade' : ''}`} style={{ backgroundImage: `url(${data[props.currentIndex].url})`}}>
                 <div className='slider__left_arrow'>
                 <BsChevronCompactLeft size={30} onClick={props.previousSlide} /> 
                 </div>  

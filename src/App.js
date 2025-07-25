@@ -9,19 +9,34 @@ import Typewriter from 'typewriter-effect';
 function App() { 
 
   const[currentIndex, setCurrentIndex] = useState(0); 
+  const [isFading, setIsFading] = useState(false);
 
-  const previousSlide = () => {
-    setTimeout(() => {const newIndex = currentIndex === 0 ? data.length - 1 : currentIndex - 1; 
-      setCurrentIndex(newIndex);}, 300)
-      } 
-
+  const previousSlide = () => { 
+    setIsFading(true);
+    setTimeout(() => {
+      const newIndex = currentIndex === 0 ? data.length - 1 : currentIndex - 1;  
+      setCurrentIndex(newIndex); 
+      setIsFading(false);
+    },300);
+    }
+    
   const nextSlide = () => {
-    setTimeout(() => {const newIndex = currentIndex === data.length - 1 ? 0 : currentIndex +1; 
-      setCurrentIndex(newIndex);}, 300)  
+    setIsFading(true);
+    setTimeout(() => {
+      const newIndex = currentIndex === data.length - 1 ? 0 : currentIndex +1; 
+      setCurrentIndex(newIndex) 
+      setIsFading(false);
+    },300);
+    
       } 
   
   const goToSlide = (slideIndex) => {
-    setTimeout(() => {setCurrentIndex(slideIndex);}, 300)
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentIndex(slideIndex); 
+      setIsFading(false);
+    }, 300);
+      
   }
 
   return ( 
@@ -46,7 +61,8 @@ function App() {
       currentIndex = {currentIndex} 
       previousSlide = {previousSlide} 
       nextSlide = {nextSlide} 
-      goToSlide = {goToSlide}/>
+      goToSlide = {goToSlide}
+      isFading={isFading}/> 
     </div>  
   );
 }

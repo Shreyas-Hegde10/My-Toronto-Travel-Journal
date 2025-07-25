@@ -18,9 +18,17 @@
   background-size: cover;
   background-position: center;
   border-radius: 16px;
-  position: relative;  
-  
+  position: relative;
+  opacity:1;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 } 
+
+.slider__image.fade{
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
 
 
 .slider__left_arrow,

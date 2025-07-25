@@ -29,7 +29,7 @@
     background: linear-gradient(to right, #00b4db, #0083b0); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    text-shadow: 0 0 px rgba(0, 179, 255, 0.4);
+    text-shadow: 0 0px rgba(0, 179, 255, 0.4);
     
 } 
 
