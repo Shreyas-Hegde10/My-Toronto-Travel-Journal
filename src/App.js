@@ -17,7 +17,7 @@ function App() {
       const newIndex = currentIndex === 0 ? data.length - 1 : currentIndex - 1;  
       setCurrentIndex(newIndex); 
       setIsFading(false);
-    },300);
+    },450);
     }
     
   const nextSlide = () => {
@@ -26,7 +26,7 @@ function App() {
       const newIndex = currentIndex === data.length - 1 ? 0 : currentIndex +1; 
       setCurrentIndex(newIndex) 
       setIsFading(false);
-    },300);
+    },450);
     
       } 
   
@@ -35,7 +35,7 @@ function App() {
     setTimeout(() => {
       setCurrentIndex(slideIndex); 
       setIsFading(false);
-    }, 300);
+    }, 450);
       
   }
 
