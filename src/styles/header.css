@@ -5,17 +5,19 @@
     display:flex; 
     justify-content: center; 
     align-items: center;
+    width: 100%;
 } 
 
 .header-title{ 
     font-weight: 501; 
     font-size: 18px; 
-    user-select: none;;
+    user-select: none;
 } 
 
 .header-img{
     height:24px; 
-    margin-right: 10px;
+    margin-right: 10px; 
+    user-select: none;
 } 
 
 .header__typewriter{
@@ -43,11 +45,14 @@
     }
 } 
 
-.header__typewriter--span{
-    color:black; 
-    background: none !important; 
-    -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: unset !important; 
+@media only screen and (max-width: 600px) {
+  .header__typewriter {
+    font-size:22px;
+    margin-top: 75px; 
+    white-space: normal; 
+    text-align: center;
+  }
+
 }
 
 
