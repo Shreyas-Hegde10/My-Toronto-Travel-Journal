@@ -5,17 +5,19 @@ function Snippet(props){
     return(
         <div className="snippet">
             <h2 className="snippet__title">Snippets from My Journal</h2> 
-            <div className={`snippet__content ${props.isFading ? 'fade': null}`}>
-                <p className="snippet__text">
-                    <Typewriter
+            <div 
+            className={`snippet__content ${props.isFading ? 'fade': null}`}
+            onClick={() => props.setIsTyping(false)}>
+                <p className="snippet__text"> 
+                    {props.isTyping ? (
+                        <Typewriter
                         options={{
                             strings: props.snippet,
                             autoStart: true,
                             loop: false,
                             delay: 50, 
-                            cursor: '|',
-                        }}
-                    />
+                        }} />
+                    ) : (props.snippet)}
                 </p>
             </div>
         </div>
