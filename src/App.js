@@ -35,13 +35,16 @@ function App() {
       } 
   
   const goToSlide = (slideIndex) => {
-    setIsFading(true); 
-    setIsTyping(true);
-    setTimeout(() => {
-      setCurrentIndex(slideIndex); 
-      setIsFading(false);
-    }, 450);
-      
+    if (slideIndex !== currentIndex){ 
+        setIsFading(true);
+        setIsTyping(true);
+        setTimeout(() => {
+        setCurrentIndex(slideIndex); 
+        setIsFading(false);
+        }, 450);
+    } else{
+
+    }    
   }
 
   return ( 
