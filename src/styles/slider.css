@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    margin-top: -125px;
 } 
 
 .slider__image {
@@ -86,7 +87,8 @@
 
 @media only screen and (max-width: 600px) {
   .slider{
-    margin:-90px auto;
+    margin:-90px auto; 
+    margin-top: -150px;
   }
   .slider__image{
       width: 85vw; 

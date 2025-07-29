@@ -3,7 +3,7 @@
     justify-content: center; 
     text-align: center; 
     align-items: center;
-
+    margin-top: -200px;
 } 
 
 .snippet__title{
@@ -35,4 +35,13 @@
     font-size: 24px; 
     line-height: 1.5; 
     color: #333; 
+} 
+
+@media only screen and (max-width: 600px) {
+  .snippet__text {
+    font-size: 18px;
+  }
+   .snippet__title {
+     font-size: 20px;
+    }
 }
