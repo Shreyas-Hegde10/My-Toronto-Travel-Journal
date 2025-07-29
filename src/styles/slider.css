@@ -2,14 +2,13 @@
     max-width: 1400px; 
     height:780px;
     width: 100%; 
-    margin: -60px auto; 
+    margin: -70px auto; 
     padding: 16px 4px; 
     position: relative; 
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    margin-bottom: 400px;
 } 
 
 .slider__image {

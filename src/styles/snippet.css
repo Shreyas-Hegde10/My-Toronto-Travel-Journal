@@ -1,0 +1,30 @@
+.snippet{
+    direction: flex; 
+    justify-content: center; 
+    text-align: center; 
+    align-items: center;
+
+} 
+
+.snippet__title{
+    background: linear-gradient(to right, #00b4db, #0083b0); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-shadow: 0 0px rgba(0, 179, 255, 0.4);
+} 
+
+.snippet__content{ 
+    margin-top: 8px;  
+    opacity:1;
+} 
+
+.snippet__content.fade{
+    opacity:0; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+.snippet__text{
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #333; 
+}

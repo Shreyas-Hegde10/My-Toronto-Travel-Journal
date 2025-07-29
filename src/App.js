@@ -1,6 +1,7 @@
 import Header from "./components/Header"
-import Slider from "./components/Slider";
-import {React, useState } from "react"; 
+import Slider from "./components/Slider";  
+import Snippet from "./components/Snippet";
+import {React, useState } from "react";  
 import data from './data'; 
 import Typewriter from 'typewriter-effect';
 
@@ -62,7 +63,10 @@ function App() {
       previousSlide = {previousSlide} 
       nextSlide = {nextSlide} 
       goToSlide = {goToSlide}
-      isFading={isFading}/> 
+      isFading={isFading}/>  
+
+      <Snippet snippet={data[currentIndex].snippet} isFading={isFading} /> 
+
     </div>  
   );
 }
