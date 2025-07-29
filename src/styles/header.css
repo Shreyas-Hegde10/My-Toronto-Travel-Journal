@@ -27,22 +27,11 @@
     margin-top: 100px; 
     overflow: hidden;
     white-space: nowrap; 
-    animation: fadeInUp 1s ease-in-out;
     background: linear-gradient(to right, #00b4db, #0083b0); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     text-shadow: 0 0px rgba(0, 179, 255, 0.4);
     
-} 
-
-@keyframes fadeInUp{
-    0%{
-        opacity:0; 
-        transform: translateY(20px);
-    } 
-    100%{
-        opacity:1; 
-    }
 } 
 
 @media only screen and (max-width: 600px) {

@@ -14,9 +14,15 @@
 } 
 
 .snippet__content{ 
+    font-family: EB Garamond, serif;
     margin-top: 8px;  
     opacity:1;
-} 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}  
+
+.snippet__content:hover{
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
 
 .snippet__content.fade{
     opacity:0; 
@@ -24,7 +30,7 @@
 }
 
 .snippet__text{
-    font-size: 16px; 
+    font-size: 24px; 
     line-height: 1.5; 
     color: #333; 
 }
